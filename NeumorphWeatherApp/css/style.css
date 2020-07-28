@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url('ProximaNova-Light.eot');
+    src: url('ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: "Proxima Nova Light";
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    background-color: #20b1a0;
+    box-sizing: border-box;
+}
+#current-weather-details{
+    width: 30vw;
+    height: 40vh;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20vh;
+    margin-left: -15vw;
+    text-align: center;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #1d9f90, #22bdab);
+    box-shadow:  24px 24px 48px #1b9688, 
+                -24px -24px 48px #25ccb8;
+}
+#current-weather-details ul{
+    padding-top: 10vh;
+    list-style: none;
+}
+#current-weather-details ul li{
+    line-height: 4vh;
+}
+#get-weather{
+    padding: 2vh;
+    border: none;
+    margin-top: 3vh;
+    border-radius: 6px;
+    background: linear-gradient(145deg, #1d9f90, #22bdab);
+    box-shadow:  5px 5px 11px #1b9688, 
+                -5px -5px 11px #25ccb8;
+}
+#get-weather:hover{
+    animation: fade 1s ease;
+    background: #20b1a0;
+    box-shadow: inset 5px 5px 11px #1b9688, 
+                inset -5px -5px 11px #25ccb8;
+}
+#current-city{
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 5vh;
+}
+#weather-summary{
+    font-size: 1.5vw;
+    margin-left: -15vw;
+    text-align: center;
+    padding-top: 2vh;
+}
+#current-city-text{
+    position: absolute;
+    width: 20vw;
+    height: 3vh;
+    left: 50%;
+    margin-top: 5vh;
+    margin-left: -9.5vw;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(145deg, #1d9f90, #22bdab);
+    box-shadow:  5px 5px 10px #1b9688, 
+                -5px -5px 10px #25ccb8;
+}
+#current-city-text::placeholder{
+    text-align: center;
+}

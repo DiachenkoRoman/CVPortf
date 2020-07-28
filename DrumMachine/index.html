@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To the beat of your drums</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="wrap">
+<div class="videoBg">
+    <video autoplay loop muted>
+        <source src="vbg/tranz.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="keys">
+    <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sound">бум</span>
+    </div>
+    <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="sound">тыщ</span>
+    </div>
+    <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="sound">цык глухой</span>
+    </div>
+    <div data-key="70" class="key">
+        <kbd>F</kbd>
+        <span class="sound">цык звонкий</span>
+    </div>
+    <div data-key="71" class="key">
+        <kbd>G</kbd>
+        <span class="sound">баритон</span>
+    </div>
+    <div data-key="72" class="key">
+        <kbd>H</kbd>
+        <span class="sound">Демо</span>
+    </div>
+
+</div>
+
+<audio data-key="65" src="soundKits/classic/kick.wav"></audio>
+<audio data-key="83" src="soundKits/classic/processed.wav"></audio>
+<audio data-key="68" src="soundKits/classic/hiHatClosed.wav"></audio>
+<audio data-key="70" src="soundKits/classic/hiHatOpen.wav"></audio>
+<audio data-key="71" src="soundKits/classic/floorTom.wav"></audio>
+<audio data-key="72" src="soundKits/classic/demo.mp3"></audio>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
